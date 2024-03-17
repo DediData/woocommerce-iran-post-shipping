@@ -1,115 +1,143 @@
-=== WooCommerce Iran Post Shipping ===
-Contributors: parsmizban
-Donate link: http://parsmizban.com/
-Tags: persian woocommerce, iran post, iran shipping, farsi woocommerce, woocommerce farsi, ووکامرس, ووکامرس فارسی, نرخ پستی, محاسبه نرخ پستی, پیشتاز, سفارشی, پست پیشتاز, پست سفارشی, persian wordpress, farsi wordpress, farsi, iran, persian, rtl, وردپرس, فارسی, وردپرس فارسی, فارسی, ایران
-Requires at least: 4.0
-Donate link: http://parsmizban.com
-Tested up to: 4.8.1
-Stable tag: 2.0
+=== Express, Certified Post, Bike Delivery and Iranian Postal Companies for WooCommerce ===
+Contributors: dedidata, parsmizban, farhad0
+Tags: woocommerce, shipping, order, weight based shipping, woocommerce shipping
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.0
+Stable tag: 5.0.3
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Donate link: https://dedidata.com
 
-افزونه محاسبه اتوماتیک نرخ پست های ایران
+Express & Certified Post, Bike Delivery and Iranian Postal Companies for WooCommerce
 
 == Description ==
 
-این ماژول روش های پستی سفارشی و پیشتاز ایران را به ووکامرس اضافه و به صورت اتوماتیک محاسبه می کند.
+This plugin adds express, certified, courier, and other shipping methods to WooCommerce, automatically calculating the shipping costs.
 
-= مشخصات =
-* افزودن دو روش ارسال پیشتاز و سفارشی
-* محاسبه نرخ پستی پست های سفارشی و پیشتاز به صورت اتوماتیک
-* امکان افزودن مبلغ به صورت ثابت
-* امکان افزودن مبلغ به در صد
-* تعیین مسافت از مبدا تا مقصد و محاسبه اتوماتیک نرخ
-* محاسبه بر اساس واحد های پولی ریال ، تومان و هزار تومان
-* محاسبه بر اساس واحد های وزنی گرم و کیلوگرم
-* تشخیص کد پستی نامعتبر مقصد
-* محاسبه نرخ کد پستی نامعتبر
-* محاسبه مبلغ بیمه به صورت اتوماتیک
-* محاسبه مبلغ مالیات پستی به صورت اتوماتیک
-* محاسبه نرخ بر اساس وزن
-* افزودن واحد های پولی ایران به صورت اتوماتیک در صورت عدم وجود
-* افزودن لیست استان های ایران به صورت اتوماتیک در صورت عدم وجود
-* رند کردن مبالغ زیر 100 تومان به بالا
+= Specifications =
+* Adding express and certified shipping methods, bike courier, and cash on delivery.
+* Automatic calculation of postage rates for certified and express mail.
+* Ability to add a fixed amount.
+* Ability to add an amount as a percentage.
+* Determining the distance from the origin to the destination and automatic rate calculation.
+* Calculation based on currency units: Rial, Toman, and Thousand Toman.
+* Calculation based on weight units: Grams and Kilograms.
+* Detection of invalid destination postal codes.
+* Calculation of rates for invalid postal codes.
+* Automatic calculation of insurance amount.
+* Automatic calculation of postal tax amount.
+* Rate calculation based on weight.
+* Automatic addition of Iranian currency units if not available.
+* Automatic addition of the list of Iranian provinces if not available.
+* Rounding up amounts below 100 Tomans.
+Validated by:
+https://wpreadme.com/
+https://wordpress.org/plugins/developers/readme-validator
 
 == Installation ==
 
-= Minimum Requirements =
+### Minimum Requirements
 
-* WordPress 3.8 or greater
-* PHP version 5.2.4 or greater
-* MySQL version 5.0 or greater
+* WordPress 6.0 or greater
+* PHP 7.0 or greater is required (PHP 8.0 or greater is recommended)
+* MySQL 5.6 or greater, OR MariaDB version 10.1 or greater, is required.
 * WooCommerce
-* Persian WooCommerce (Optional)
 
-= Automatic installation =
+### You can install this plugin in two ways:
 
-Automatic installation is the easiest option as WordPress handles the file transfers itself and you don’t need to leave your web browser. To do an automatic install, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+= Automatic installation (Install from within WordPress) =
 
-In the search field type “Iran Post Shipping” and click Search Plugins. Once you’ve found our plugin you can view details about it such as the the point release, rating and description. Most importantly of course, you can install it by simply clicking “Install Now”.
+Automatic installation is the easiest option, WordPress will handles the file transfer, and you won’t need to leave your web browser.
+
+1. Log in to your WordPress dashboard
+2. Navigate to the Plugins menu within your dashboard
+3. click “Add New.”
+4. In the search field type the name of this plugin and then click “Search Plugins.”
+5. Once you’ve found us,  you can view details about it such as the point release, rating, and description.
+6. Most importantly of course, you can install it by! Click “Install Now,” and WordPress will take it from there.
+7. Activate the plugin from your Plugins page
 
 = Manual installation =
 
-The manual installation method involves downloading our plugin and uploading it to your webserver via your favourite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
+Manual installation method requires downloading the this plugin and uploading it to your web server via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](https://wordpress.org/support/article/managing-plugins/#manual-plugin-installation).
 
-= Updating =
-
-Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
-
-== Frequently Asked Questions ==
-
-= آیا این پلاگین محاسبه نرخ های پستی را به صورت اتوماتیک انجام می دهد؟ =
-
-نحوه محاسبه بر اساس نرخ پستی بر اساس وزن ، مبلغ بیمه ، مالیات پستی و مسافت از مبدا تا مقصد بر اساس موقعیت دو استان نسبت به هم می باشد. لازم به ذکر است که مبلغ محاسباتی به صورت اتوماتیک بر اساس واحد پول ایران و واحد وزن تعیین شده در تنظیمات ووکامرس محاسبه و به صورت اتوماتیک به واحد های تعیین شده تبدیل میشود.
-
-= از چه واحد های پولی در این ماژول پشتیبانی می شود؟ =
-
-واحد های پول قابل پذیرش ریال ، تومان و هزار تومان است.
-
-= از چه واحد های وزنی در این ماژول پشتیبانی می شود؟ =
-
-واحد های وزنی مورد قبول ، گرم و کیلوگرم می باشد.
- 
-= برای پشتیبانی باید به کدام سایت مراجعه کنیم؟ =
-
-پشتیبانی از طریق تالار گفتمان وب سایت پارس میزبان واقع در آدرس [پارس میزبان](http://parsmizban.com/ "پارس میزبان") می باشد.
-
-== Screenshots ==
-
-1. بخش مدیریت
-2. محاسبه نرخ در سبد خرید
-
-== Changelog ==
-
-= 2.0 =
-بروزرسانی نرخ پست و نحوه محاسبات و غیره
-
-= 1.0.9 =
-بروزرسانی نرخ پست
-
-= 1.0.8 =
-اصلاح محاسبه کد پستی نامعتبر
-
-= 1.0.7 =
-اصلاح محاسباتی
-
-= 1.0.6 =
-* اصلاح محاسبه نرخ پیشتاز برای وزن های بیشتر از 2 کیلوگرم
-
-= 1.0.4 =
-* بروزرسانی نرخ پست سفارشی
-
-= 1.0.3 =
-* حذف فایل یوتیلیتی به درخواست ووکامرس فارسی و 
-* tohi20 رند شدن اعداد زیر صد تومان به بالا به درخواست
-
-= 1.0.1 =
-* برطرف شدن مشکل محاسبه
-
-= 1.0 =
-* نسخه اول پلاگین
+1. Download the plugin ZIP file and extract it
+2. Upload the extracted folder to the /wp-content/plugins/ directory
+3. Activate the plugin through the ‘Plugins’ menu in WordPress
 
 == Upgrade Notice ==
 
-= 1.1 =
-برطرف شدن مشکل محاسبه
+Automatic updates should work smoothly, but we still recommend you back up your site.
+
+== Frequently Asked Questions ==
+
+= Does this plugin automatically calculate postage rates? =
+
+The calculation method is based on postal rates, weight, insurance amount, postal tax, and the distance from the origin to the destination relative to the position of the two provinces. It's important to note that the calculated amount is automatically converted to the currency unit of Iran and the weight unit specified in your WooCommerce settings.
+
+= What currency units are supported in this module? =
+
+The accepted currency units are Rial, Toman, and Thousand Toman.
+
+= What weight units are supported in this module? =
+
+The accepted weight units are grams and kilograms.
+ 
+= Which website should we visit for support? =
+
+Support is available through the forum of the author website.
+
+== Screenshots ==
+1. Management Section
+2. Calculating Rates in the Shopping Cart
+
+== Changelog ==
+= 5.0.2 =
+Whole plugin rewritten
+Multilingual support
+Updated prices
+Standard Coding
+
+= 3.6.0 =
+Updating Postal Rates
+Adding Maximum Weight for Packages
+Correcting Descriptions
+Fixing Some Minor Issues
+
+= 3.5.0 =
+Calculating Based on Postal Rates for the Year 2019
+Calculating Adjacent, Non-Adjacent, and Same Province Rates
+Addressing Some Issues
+
+= 3.0.0 =
+Fixing Issues with Province Calculations
+Adding Two Methods: Bike Courier and Cash on Delivery
+
+= 2.0.0 =
+Updating Postal Rates and Calculation Methods, etc.
+
+= 1.0.9 =
+Updating Postal Rates
+
+= 1.0.8 =
+Correcting Invalid Postal Code Calculation
+
+= 1.0.7 =
+Correction of Calculations
+
+= 1.0.6 =
+* Correction of Express Rate Calculation for Weights Over 2 Kilograms
+
+= 1.0.4 =
+* Updating Custom Postal Rates
+
+= 1.0.3 =
+* Removing the utility file as per the request of WooCommerce Persian and...
+* Rounding up amounts below 100 Toman upon request
+
+= 1.0.1 =
+* Resolving Calculation Issue
+
+= 1.0.0 =
+* First Version of the Plugin
